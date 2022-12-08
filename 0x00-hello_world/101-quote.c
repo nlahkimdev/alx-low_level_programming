@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-int i, n = 0;
+int i = 0;
 char str[59] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 for (i = 0; i < strlen(str); ++i)
 	putchar(str[i]);
