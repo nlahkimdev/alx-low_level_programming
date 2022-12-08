@@ -8,8 +8,9 @@
  */
 int main(void)
 {
+size_t i = 0;
 char str[59] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-for (size_t i = 0; i < strlen(str); ++i)
+for (i = 0 ; i < strlen(str); ++i)
 	putchar(str[i]);
 return (1);
 }
