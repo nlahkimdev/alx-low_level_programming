@@ -9,7 +9,7 @@
 int main(void)
 {
 	char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
-	int n = 0;
+	size_t n = 0;
 
 	for (n = 0; n < strlen(alphabet); n++)
 	{
