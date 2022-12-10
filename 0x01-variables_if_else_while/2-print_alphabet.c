@@ -1,5 +1,5 @@
-#include <string.h>
 #include <stdio.h>
+#include <string.h>
 
 /**
  * main - Entry point
@@ -17,4 +17,3 @@ int main(void)
 	}
 	putchar('\n');
 }
-
