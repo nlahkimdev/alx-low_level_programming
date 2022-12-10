@@ -11,21 +11,25 @@ int main(void)
 {
 	int n;
 	int last_digit;
+	char ld[] = "Last digit of";
+	char greater[] = "and is greater than 5";
+	char zero[] = "and is 0";
+	char lesser[] = "and is less than 6 and not 0";
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	last_digit = n % 10;
 	if (last_digit > 5)
 	{
-		puts("Last digit of %i is %i and is greater than 5", n, last_digit);
+		printf("%s %i is %i %s\n", ld, n, last_digit, greater);
 	}
 	else if (last_digit == 0)
 	{
-		puts("Last digit of %i is %i and is 0", n, last_digit);
+		printf("%s %i is %i %s\n", ld, n, last_digit, zero);
 	}
 	else if (last_digit != 0 && last_digit < 6)
 	{
-		puts("Last digit of %i is %i and is less than 6 and not 0", n, last_digit);
+		printf("%s %i is %i %s\n", ld, n, last_digit, lesser);
 	}
 	return (0);
 }
