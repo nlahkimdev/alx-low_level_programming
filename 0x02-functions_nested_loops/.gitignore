@@ -6,7 +6,7 @@ _putchar.c
 2-alphabet_x10
 3-main.c
 3-islower
-4-isalpha
+
 4-main.c
 5-sign
 5-main.c
@@ -20,3 +20,4 @@ _putchar.c
 *.swp
 9-main.c
 9-times_table
+temp
