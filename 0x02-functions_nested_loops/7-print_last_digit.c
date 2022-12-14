@@ -11,30 +11,9 @@
  */
 int print_last_digit(int n)
 {
-	return (_abs(n) % 10);
-}
-/*
-	int i;
-	int res;
+	int last_digit;
 
-	if (n < 0)
-	{
-		i  = n * -1;
-		res = i % 10;
-		_putchar(res);
-		return (i % 10);
-	}
-	else if (n == 0)
-	{
-		_putchar('0');
-		return (0);
-	}
-	else if (n > 0)
-	{
-		res = n % 10;
-		_putchar(res);
-		return (n % 10);
-	}
-	return (0);
+	last_digit = _abs(n) % 10;
+	_putchar(last_digit);
+	return (last_digit);
 }
-*/
