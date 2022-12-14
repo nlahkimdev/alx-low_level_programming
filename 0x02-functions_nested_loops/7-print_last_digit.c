@@ -1,4 +1,5 @@
 #include "main.h"
+#include "6-abs.c"
 
 /**
  * print_last_digit - Entry point
@@ -10,6 +11,9 @@
  */
 int print_last_digit(int n)
 {
+	return (_abs(n) % 10);
+}
+/*
 	int i;
 	int res;
 
@@ -33,3 +37,4 @@ int print_last_digit(int n)
 	}
 	return (0);
 }
+*/
