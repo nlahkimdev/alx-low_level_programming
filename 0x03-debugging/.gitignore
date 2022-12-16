@@ -5,3 +5,4 @@ a.out
 main.c
 positive_or_negativepositive_or_negative gcc -Wall -pedantic -Werror -Wextra -std=gnu89 positive_or_negative.c 0-main.c -o 0-main
 positive_or_negativepositive_or_negative gcc -Wall -pedantic -Werror -Wextra -std=gnu89 positive_or_negative.c 0-main.c -o 0-main
+1-main
