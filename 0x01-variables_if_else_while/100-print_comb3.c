@@ -14,10 +14,10 @@ int main(void)
 	{
 		for (m = 48; m < 58; m++)
 		{
-			/*Omitting similar digits*/
+			/* Omitting similar digits */
 			if (n != m && n < m)
 			{
-				/*Omitting the multiples of 10 */
+				/* Omitting the multiples of 10 */
 				if (m != 48)
 				{
 					putchar(n);
@@ -31,6 +31,6 @@ int main(void)
 			}
 		}
 	}
-		putchar('\n');
-		return (0);
+	putchar('\n');
+	return (0);
 }
