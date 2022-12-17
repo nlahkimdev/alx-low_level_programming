@@ -20,17 +20,17 @@ int main(void)
 				/*Omitting the multiples of 10 */
 				if (m != 48)
 				{
-					_putchar(n);
-					_putchar(m);
+					putchar(n);
+					putchar(m);
 					if (n != 56 || m != 57)
 					{
-						_putchar(44);
-						_putchar(32);
+						putchar(44);
+						putchar(32);
 					}
 				}
 			}
 		}
 	}
-		_putchar('\n');
+		putchar('\n');
 		return (0);
 }
