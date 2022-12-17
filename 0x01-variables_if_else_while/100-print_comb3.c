@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - Entry point
@@ -8,16 +9,29 @@
 int main(void)
 {
 	int n;
+	int m;
 
 	for (n = 48; n < 58; n++)
 	{
-		putchar(n);
-		if (n != 57)
+		for (m = 48; m < 58; m++)
 		{
-			putchar(44);
-			putchar(32);
+			/*Omitting similar digits*/
+			if (n != m && n < m)
+			{
+				/*Omitting the multiples of 10 */
+				if (m != 48)
+				{
+					_putchar(n);
+					_putchar(m);
+					if (n != 56 || m != 57)
+					{
+						_putchar(44);
+						_putchar(32);
+					}
+				}
+			}
 		}
 	}
-	putchar('\n');
-	return (0);
+		_putchar('\n');
+		return (0);
 }
