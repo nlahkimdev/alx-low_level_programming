@@ -15,12 +15,12 @@ int main(void)
 
 	for (a = 1; a < 101; a++)
 	{
-		if (a % 3 == 0)
+		if (a % 3 == 0 && a % 5 == 0)
+			printf("%s ", fizzBuzz);
+		else if (a % 3 == 0)
 			printf("%s ", fizz);
 		else if (a % 5 == 0)
 			printf("%s ", buzz);
-		else if (a % 3 == 0 && a % 5 == 0)
-			printf("%s ", fizzBuzz);
 		else
 			printf("%i ", a);
 	}
