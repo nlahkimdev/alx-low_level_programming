@@ -7,9 +7,9 @@
 int main(void)
 {
 	int i;
-	int a = 0;
-	int b = 1;
-	int c;
+	unsigned int = 0;
+	unsigned int b = 1;
+	unsigned int c;
 
 	for (i = 0; i < 50; i++)
 	{
