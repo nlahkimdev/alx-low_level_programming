@@ -12,7 +12,7 @@ int main(void)
 	int mul5;
 	int i;
 
-	for (i = 0, i < 1024; ++)
+	for (i = 0; i < 1024; ++)
 	{
 		if ((i % 3) == 0)
 			mul3 += i;
