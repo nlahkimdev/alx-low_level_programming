@@ -34,4 +34,3 @@ magic.c
 5-string_toupper.c
 4-rev_array.c
 3-strcmp.c
-2-strncpy.c
