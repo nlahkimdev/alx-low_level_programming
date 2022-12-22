@@ -7,19 +7,14 @@
 int main(void)
 {
 
-	int sum;
-	int mul3;
-	int mul5;
+	int sum = 0;
 	int i;
 
 	for (i = 0; i < 1024; i++)
 	{
-		if ((i % 3) == 0)
-			mul3 += i;
-		else if ((i % 5) == 0)
-			mul5 += i;
+		if ((i % 3) == 0 || (i % 5) == 0)
+			sum += i;
 	}
-	sum = mul3 + mul5;
 	printf("%d\n", sum);
 	return (0);
 }
