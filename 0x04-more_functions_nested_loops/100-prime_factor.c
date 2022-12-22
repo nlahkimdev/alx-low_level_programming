@@ -1,24 +1,29 @@
 #include <stdio.h>
 
-/*
- * main - entry point
+/**
+ * main - the fizz buzz program
  *
- * @n: a given number
- *
- * Return: Always 0 if success
+ * Return: Always 0.
  */
 int main(void)
 {
-	long int i;
-	long int n;
+	long num = 612852475143;
+	int i;
 
-	n = 612852475143;
-
-	for (i = n-1; i > 0; i--)
+	while (i++ < num / 2)
 	{
-		if (n % i == 0)
-			printf("%li\n", i);
+		if (num % i == 0)
+		{
+			num /= 2;
+			continue;
+		}
 
+		for (i = 3; i < num / 2; i += 2)
+		{
+			if (num % i == 0)
+				num /= i;
+		}
 	}
+	printf("%ld\n", num);
 	return (0);
 }
