@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
  * *_strcat - contacetas a string to another one
  *
@@ -10,14 +10,12 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int c;
-	int i;
+	int c = 0;
+	int i = 0;
 
-	while (dest[c] != '\0')
+	while (dest[i++])
 		c++;
-	for (i = 0; src[i] != '\0'; i++)
-		dest[c + i] = src[i];
-	dest[c + i] = '\0';
-
-	return (0);
+	for (i = 0; src[i]; i++)
+		dest[c++] = src[i];
+	return (dest);
 }
