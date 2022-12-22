@@ -23,20 +23,24 @@ void print_times_table(int n)
 				_putchar(' ');
 				p = h * v;
 
-				if (p <= 99)
-					_putchar(' ');
 				if (p <= 9)
+				{
 					_putchar(' ');
-				if (p >= 100)
-				{
-					_putchar((p / 100) + '0');
-					_putchar((p / 100) % 10 + '0');
+					_putchar(' ');
+					_putchar(p + '0');
 				}
-				if (p >= 10 && p <=  99)
+				else if (p <= 99)
 				{
+					_putchar(' ');
 					_putchar((p / 10) + '0');
+					_putchar((p % 10) + '0');
 				}
-				_putchar((p % 10) + '0');
+				else
+				{
+					_putchar(((p / 100) % 10) + '0');
+					_putchar(((p / 10) % 10) + '0');
+					_putchar((p % 10)  + '0');
+				}
 			}
 			_putchar('\n');
 		}
