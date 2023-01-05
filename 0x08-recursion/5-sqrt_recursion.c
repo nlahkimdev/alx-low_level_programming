@@ -7,33 +7,25 @@
  *
  * Return: natural square root of a number
  */
-
 int _sqrt_recursion(int n)
 {
-	int start;
-	int end = n;
+	int low = 1;
+	int high = n;
+	int mid;
 
-	if (n < 0)
-		return (-1);
 	if (n == 0 || n == 1)
 		return (n);
-
-	start = 1;
-	while (start <= end)
+	if (n < 0)
+		return (-1);
+	while (low <= high)
 	{
-		int mid = (start + end) / 2;
-
-		if (mid == n / mid)
-		{
-			if (mid * mid == n)
-				return (mid);
-			else
-				return (-1);
-		}
-		if (mid < n / mid)
-			start = mid + 1;
+		mid = low + (high - low) / 2;
+		if (mid * mid == n)
+			return (mid);
+		else if (mid * mid < n)
+			low = mid + 1;
 		else
-			end = mid - 1;
+			high = mid - 1;
 	}
-	return (end);
+	return (-1);
 }
