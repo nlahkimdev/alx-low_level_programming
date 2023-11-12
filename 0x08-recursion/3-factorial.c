@@ -5,7 +5,7 @@
  *
  * @n: int - sould be positive
  *
- * Return: the factorial of the given number n 
+ * Return: the factorial of the given number n
  */
 int factorial(int n)
 {
