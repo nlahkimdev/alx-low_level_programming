@@ -17,7 +17,8 @@ int _strlen_recursion(char *s)
 	else
 	{
 		/* the function returns 1 for the current character */
-		/* plus the length of the rest of the string computed by the recursive call with s + 1 */
-		return 1 + _strlen_recursion(s + 1);
+		/* plus the length of the rest of the string */
+		/* computed by the recursive call with s + 1 */
+		return (1 + _strlen_recursion(s + 1));
 	}
 }
