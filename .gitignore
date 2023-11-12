@@ -2,3 +2,6 @@ replit.nix
 .replit
 .git/
 .ccls-cache/
+main.c
+main
+
