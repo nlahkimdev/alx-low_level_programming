@@ -15,6 +15,7 @@ int is_palindrome(char *s)
     return (check_palindrome(s, 0));
 }
 
+
 /**
  * check_palindrome - checks if a string is plaindrome
  *
