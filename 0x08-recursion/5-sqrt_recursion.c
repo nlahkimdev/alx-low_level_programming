@@ -3,7 +3,7 @@
 int check_sqrt(int n, int i);
 
 /**
- * _sqrt_recursion - a function that compute the natural square root of a number.
+ * _sqrt_recursion - computes the natural square root of a number.
  *
  * @n: int - a given integer for which we want to find the square root
  *
@@ -15,13 +15,13 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * check_sqrt - a function that check if the square root of a number is correct.
+ * check_sqrt - checks if the square root of a number is correct.
  *
  * @n: int - a given integer for which we want to find the square root
  *
  * @i: int - an iterator
  *
- * Return: returns the natural square root of a number.
+ * Return: natural square root of a number or -1 if it didn't have it
  */
 int check_sqrt(int n, int i)
 {
