@@ -13,13 +13,10 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int i,j;
+	int i, j;
 	int **arr;
-	/* check if width is equal or less than 0 */
-	if (width <= 0)
-		return (NULL);
-	/* check if height is equal or less than 0 */
-	if (height <= 0)
+	/* check if width or height are less or equal to 0 */
+	if (width <= 0 || height <= 0)
 		return (NULL);
 	/* allocate memory for height */
 	arr = calloc(height, sizeof(int *));
@@ -33,6 +30,7 @@ int **alloc_grid(int width, int height)
 		/* handle no enough memory available */
 		if (arr[i] == NULL)
 		{
+			/* Everything is freed if calloc fails */
 			for (j = 0 ; j < i ; j++)
 				free(arr[j]);
 			free(arr);
