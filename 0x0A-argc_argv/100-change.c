@@ -41,6 +41,7 @@ int main(int argc, char *argv[])
 	return (0);
 }
 
+
 /**
  * check_change - checks number of coins
  *
