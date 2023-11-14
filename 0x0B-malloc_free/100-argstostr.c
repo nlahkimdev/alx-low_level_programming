@@ -19,8 +19,8 @@ char *argstostr(int ac, char **av)
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
-    	/* calculate the total size of the concatenation */
-    	for (i = 0; i < ac; i++)
+	/* calculate the total size of the concatenation */
+	for (i = 0; i < ac; i++)
 		size += strlen(av[i]);
 	/* Allocate memory for the concatenated string */
 	/* ac for adding \n for each arg and 1 for the final \0 */
