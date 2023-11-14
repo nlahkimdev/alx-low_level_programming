@@ -3,9 +3,9 @@
 /**
  * main - entry point of the program
  *
- * @argc - arguments count
+ * @argc : arguments count
  *
- * @argv - arguments vector
+ * @argv : arguments vector
  *
  * Return : 0 if success, anything else if error
  */
