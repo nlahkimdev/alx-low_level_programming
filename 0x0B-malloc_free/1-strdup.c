@@ -21,14 +21,11 @@ char *_strdup(char *str)
 	/* handle no enough memory available */
 	if (new_str == NULL)
 		return (NULL);
-	/* if size 0 return NULL */
-	if (new_str == 0)
-		return (NULL);
 	/* copy the string into the dynamically allicated variable */
 	for (i = 0; i < size; i++)
 		new_str[i] = str[i];
 	/* add the null character at the end of the copied string */
 	new_str[size] = '\0';
-	
+
 	return (new_str);
 }
