@@ -30,7 +30,7 @@ int **alloc_grid(int width, int height)
 		/* handle no enough memory available */
 		if (arr[i] == NULL)
 		{
-			/* Everything is freed if calloc fails */
+			/* Everything is freed if malloc fails */
 			for (j = 0 ; j < i ; j++)
 				free(arr[j]);
 			free(arr);
