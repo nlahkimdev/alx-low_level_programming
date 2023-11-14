@@ -5,5 +5,9 @@
 gcc -c -Wall -Werror -Wextra *.c
 # create a static lib 
 ar -rc libmy.a *.o
+# list all the .o objects 
+ar -t libmy.a
+#
+nm libmy.a
 ```
 
