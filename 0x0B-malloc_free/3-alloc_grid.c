@@ -19,14 +19,14 @@ int **alloc_grid(int width, int height)
 	if (width <= 0 || height <= 0)
 		return (NULL);
 	/* allocate memory for height */
-	arr = calloc(height, sizeof(int *));
+	arr = malloc(height * sizeof(int *));
 	/* handle no enough memory available */
 	if (arr == NULL)
 		return (NULL);
 	for (i = 0 ; i < height ; i++)
 	{
 		/* allocate memory for width */
-		arr[i] = calloc(width, sizeof(int));
+		arr[i] = malloc(width * sizeof(int));
 		/* handle no enough memory available */
 		if (arr[i] == NULL)
 		{
