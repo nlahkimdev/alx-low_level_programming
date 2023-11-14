@@ -10,10 +10,12 @@
 char *_strdup(char *str)
 {
 	/* get sizeo of str */
-	int size = strlen(str);
+	int size = 0;
 	int i;
 	char *new_str;
 
+	for (i = 0; str[i]; i++)
+		size++;
 	if (str == NULL)
 		return (NULL);
 	/* allocate memory for str */
