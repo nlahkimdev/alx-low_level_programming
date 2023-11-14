@@ -13,9 +13,10 @@ char *_strdup(char *str)
 	int size = 0;
 	int i;
 	char *new_str;
-
+	/* check if str is Null*/
 	if (str == NULL)
 		return (NULL);
+	/* get the lenght of str*/
 	for (i = 0; str[i]; i++)
 		size++;
 	/* allocate memory for str */
