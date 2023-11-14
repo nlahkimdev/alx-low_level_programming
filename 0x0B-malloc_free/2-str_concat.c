@@ -20,20 +20,12 @@ char *str_concat(char *s1, char *s2)
 	if (s1 == NULL)
 		size1 = 0;
 	else
-	{
-		/* get the lenght of s1*/
-		for (i = 0; s1[i]; i++)
-			size1++;
-	}
+		size1 = strlen(s1);
 	/* check if s2 is Null*/
 	if (s2 == NULL)
 		size2 = 0;
 	else
-	{
-		/* get the lenght of s1*/
-		for (i = 0; s2[i]; i++)
-			size2++;
-	}
+		size2 = strlen(s2);
 	/*compute the size of the concatenated string*/
 	size = size1 + size2;
 	/* allocate memory for str */
