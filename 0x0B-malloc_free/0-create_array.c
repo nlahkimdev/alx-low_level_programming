@@ -5,9 +5,9 @@
  *
  * @size : size of array
  *
- * @c : arguments vector
+ * @c : a string
  *
- * Return: 0 if success, anything else if error
+ * Return: an array of char containing the c string
  */
 char *create_array(unsigned int size, char c)
 {
@@ -16,12 +16,10 @@ char *create_array(unsigned int size, char c)
 	unsigned int i;
 	
 	if (arr == NULL)
-	{
-	return NULL;
-	}
+		return NULL;
+	
 	for (i = 0; i < size; i++)
-	{
-	arr[i] = c;
-	}
+		arr[i] = c;
+	
 	return arr;
 }
