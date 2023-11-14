@@ -17,7 +17,6 @@ int main(int argc, char *argv[])
 {
 	int count = 0;
 	int amount;
-	
 	/* check numbers of arguments */
 	if (argc != 2)
 	{
@@ -27,7 +26,6 @@ int main(int argc, char *argv[])
 
 	/* strore the first argument in a variable*/
 	amount = atoi(argv[1]);
-	
 	/*check if the argument is negative*/
 	if (amount < 0)
 	{
@@ -40,7 +38,6 @@ int main(int argc, char *argv[])
 	}
 	return (0);
 }
-
 
 /**
  * check_change - checks number of coins
